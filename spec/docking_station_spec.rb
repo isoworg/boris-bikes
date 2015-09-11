@@ -1,7 +1,10 @@
 require 'DockingStation'
 
 describe DockingStation do
-  it "exists" do
-    DockingStation.new
+
+  it "releases a bike" do
+    station = DockingStation.new
+    expect(station.release_bike).to eq(:bike)
   end
+
 end
