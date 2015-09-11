@@ -1,6 +1,7 @@
 class DockingStation
 
   def release
+    @bikes[0].working? ? @bikes[0] : "nope"
   end
 
   def dock(bike)
@@ -12,7 +13,7 @@ class DockingStation
   end
 
   def works?(bike)
-    bike.works?
+    bike.working?
   end
 
 end
