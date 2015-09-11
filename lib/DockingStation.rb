@@ -1,6 +1,14 @@
 class DockingStation
 
-  def release_bike
+  def release
+  end
+
+  def dock(bike)
+    @bikes = [bike]
+  end
+
+  def bikes
+    @bikes
   end
 
   def works?(bike)
